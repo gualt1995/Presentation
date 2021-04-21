@@ -27,7 +27,6 @@ export default class slidemenu{
         })
 
         $( window ).on("resize",function() {
-            console.log("resize")
             that.hideMenu()
         })
 
@@ -65,7 +64,7 @@ export default class slidemenu{
         anime({
             targets: ".menu_open_btn",
             easing: 'easeInOutSine',
-            duration: 100,
+            duration: 500,
             translateX: 0,
         })
     }
